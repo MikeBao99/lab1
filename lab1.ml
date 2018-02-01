@@ -206,7 +206,6 @@ Invalid_argument exception for instance.
 
 let rec max_list (lst : int list) : int =
   match lst with
-  | [] -> failwith "Invalid_argument"
   | [head] -> head
   | head :: tail -> max head (max_list tail);;
 
